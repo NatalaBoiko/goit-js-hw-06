@@ -10,4 +10,5 @@ const onInputBlur = (event) => {
     event.currentTarget.classList.add("invalid");
   }
 };
+
 inputEl.addEventListener("blur", onInputBlur);
