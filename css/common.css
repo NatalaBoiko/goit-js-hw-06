@@ -24,9 +24,9 @@ button {
 }
 
 /* task-02 */
-ul#ingredients {
-  padding: 0;
-}
+/* ul#ingredients {
+  margin-left: 5px;
+} */
 
 /* task-03 */
 .gallery {
