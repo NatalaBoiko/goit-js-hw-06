@@ -45,3 +45,12 @@ button {
   width: 50vw;
   display: block;
 }
+
+/* task-10 */
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.boxy {
+  margin: 5px;
+}
