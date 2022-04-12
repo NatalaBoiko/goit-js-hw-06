@@ -35,7 +35,7 @@ const createBoxes = () => {
 };
 createEl.addEventListener("click", createBoxes);
 
-const destroyBoxes = (event) => {
+const destroyBoxes = () => {
   boxesEl.innerHTML = "";
 };
 destroyEl.addEventListener("click", destroyBoxes);
