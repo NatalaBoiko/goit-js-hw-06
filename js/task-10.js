@@ -1,3 +1,5 @@
+"use strict";
+
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
@@ -31,12 +33,9 @@ const createItems = (items) => {
 const createBoxes = () => {
   createItems(inputEl.value);
 };
+createEl.addEventListener("click", createBoxes);
+
 const destroyBoxes = (event) => {
   boxesEl.innerHTML = "";
-  // event.currentTarget.reset();
-
-  // boxesEl.remove();
 };
-
-createEl.addEventListener("click", createBoxes);
 destroyEl.addEventListener("click", destroyBoxes);
