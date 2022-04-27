@@ -33,9 +33,14 @@ const createItems = (items) => {
 const createBoxes = () => {
   createItems(inputEl.value);
 };
-createEl.addEventListener("click", createBoxes);
 
 const destroyBoxes = () => {
-  boxesEl.innerHTML = "";
+  boxesEl.innerHTML = " ";
+  inputEl.value = "";
+  allItems.length = 0;
+  itemWidth = 30;
+  itemHeight = 30;
 };
+
+createEl.addEventListener("click", createBoxes);
 destroyEl.addEventListener("click", destroyBoxes);

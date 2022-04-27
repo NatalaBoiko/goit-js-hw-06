@@ -19,7 +19,7 @@ const imagesEl = document.querySelector(".gallery");
 const makeImages = (image) => {
   const { url, alt } = image;
   return `
-  <li class = 'gallery__item'><img src=${url} alt=${alt} class="gallery__img" />
+  <li class = 'gallery__item'><img src='${url}' alt='${alt}' class="gallery__img" />
   </li>
   `;
 };
